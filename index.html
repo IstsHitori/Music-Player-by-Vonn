@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="card">
+        <div class="img-container">
+            <img src="./img/cover-1.png" alt="">
+        </div>
+        <div class="description">
+            <h4>Lost in the City Lights</h4>
+            <p>Cosmo Sheldrake</p>
+        </div>
+        <div class="audio">
+            <div class="contador">
+                <span id="time-actual">00:00</span>
+                <span id="time-final">00:00</span>
+            </div>
+            
+            <input type="range" name="" id="barrita">
+
+            <div class="controls">
+                <button class="fill back">
+                    <img src="./img/Stop_and_play_fill.svg" alt="">
+                </button>
+                <button class="play" id="play-button">
+                    <img src="./img/Play_fill.svg" alt="">
+                </button>
+                <button class="fill next">
+                    <img src="./img/Stop_and_play_fill_reverse.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <audio id="miAudio" src="./music/forest-lullaby-110624.mp3"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>
